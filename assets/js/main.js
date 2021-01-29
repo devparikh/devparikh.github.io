@@ -32,7 +32,7 @@ JS INDEX
 		*/
 
 		$('#home').ripples({
-			resolution: 500,
+			resolution: 600,
 			dropRadius: 20,
 			perturbance: 0.04
 		})
@@ -46,7 +46,8 @@ JS INDEX
 
 		$(function () {
 			$('.caption-inner').animatedHeadline({
-				animationType: 'clip'
+				animationType: 'clip',
+				animationDelay: 400, 
 			});
 		})
 
