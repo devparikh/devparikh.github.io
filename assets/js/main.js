@@ -11,10 +11,9 @@
 JS INDEX
 =============
 
-01 - Ripple Setup
-02 - Animated Headline Setup
-03 - Portfolio Image
-04 - Testimonial Slider
+01 - Animated Headline Setup
+02 - Portfolio Image
+03 - Testimonial Slider
 
 
 -------------------------------------------------------------------------------------*/
