@@ -25,17 +25,6 @@ JS INDEX
 
 	jQuery(document).ready(function ($) {
 
-		/* 
-		=================================================================
-		01 - Ripple Setup
-		=================================================================	
-		*/
-
-		$('#home').ripples({
-			resolution: 600,
-			dropRadius: 50,
-			perturbance: 0.04
-		})
 
 		/* 
 		=================================================================
@@ -47,7 +36,7 @@ JS INDEX
 		$(function () {
 			$('.caption-inner').animatedHeadline({
 				animationType: 'clip',
-				animationDelay: 400, 
+				
 			});
 		})
 
