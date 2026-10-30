@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Dev Parikh</title>
+<meta name="description" content="Dev Parikh is a computer science student at the University of Toronto working toward interpretability and alignment research.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+  <nav aria-label="Main">
+    <strong>Dev Parikh</strong>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#work">Work</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <header class="hero">
+    <h1>Dev Parikh</h1>
+    <p class="lede">I’m a computer science student at the University of Toronto. I build machine learning projects and I’m working toward research in interpretability and alignment.</p>
+    <p class="attn" id="attn" aria-label="I want to understand how machines learn and think."></p>
+    <p class="hint">Hover or tap a word to see how strongly every other word is attended to. The weights are illustrative, not from a real model.</p>
+  </header>
+
+  <section id="about">
+    <h2>About</h2>
+    <p>Hi! I’m Dev, an 18-year-old interested in artificial intelligence and its impacts on science, technology, and society. I’m currently researching the alignment of increasingly capable AI systems with human intentions. My interests lie in large language models, computer vision, AI alignment, and governance.</p>
+  </section>
+
+  <section id="work">
+    <h2>Work</h2>
+    <h3 class="sub first">Projects</h3>
+    <div class="projects">
+      <article class="item proj">
+        <h4><a href="https://github.com/devparikh/Audio-Synthesis-GANs">Audio synthesis with WaveGAN</a></h4>
+        <p>Generates multi-second audio waveforms without labels. WaveGAN adapts the DCGAN to audio by swapping 2D convolutions for 1D ones and dropping batch normalization, and it trains with the Wasserstein loss plus a gradient penalty (WGAN-GP) for more stable training. I wrote up the full implementation in <a href="https://devparikh21.medium.com/synthesizing-realistic-audio-using-wavegans-49ec42a80340">an article on Medium</a>.</p>
+        <ul class="tags"><li>WaveGAN</li><li>WGAN-GP</li><li>Unsupervised learning</li></ul>
+      </article>
+      <article class="item proj">
+        <h4><a href="https://github.com/devparikh/Semantic-Segmentation-Road-Scenes">Semantic segmentation for road scenes</a></h4>
+        <p>A U-Net that labels every pixel in a self-driving car’s view, trained on the Cityscapes dataset. Data augmentation grew the 3,000 training and 500 test images to 23,800 and 4,000. Training used a custom Tversky loss, the Adam optimizer, a learning rate scheduler, ReduceLROnPlateau, and model checkpoints.</p>
+        <ul class="tags"><li>U-Net</li><li>Cityscapes</li><li>Tversky loss</li></ul>
+      </article>
+      <article class="item proj">
+        <h4><a href="https://github.com/devparikh/Classic-ML-Algorithms-From-Scratch">Classic ML algorithms from scratch</a></h4>
+        <p>K-Means clustering (with KMeans++ initialization and the elbow method) and Random Forest, built with only NumPy, Matplotlib, and Pandas. I tuned the Random Forest with 4-fold cross-validation across 36 configurations on a class-balanced Titanic dataset, reaching 95% average test accuracy over three runs.</p>
+        <ul class="tags"><li>K-Means</li><li>Random Forest</li><li>Cross-validation</li></ul>
+      </article>
+      <article class="item proj">
+        <h4><a href="https://github.com/devparikh/Automatic-Image-Captioning">Automatic image captioning</a></h4>
+        <p>An attention-based encoder-decoder that writes captions for images. The encoder turns an image into feature maps, and an LSTM decoder with attention reads them to generate the caption word by word, using beam search to choose the best words. Trained on the Flickr8k dataset.</p>
+        <ul class="tags"><li>LSTM</li><li>Attention</li><li>Beam search</li></ul>
+      </article>
+      <article class="item proj">
+        <h4><a href="https://github.com/devparikh/Object-Detection-with-YOLO">Object detection with YOLO</a></h4>
+        <p>My implementation of the YOLO (You Only Look Once) detector using OpenCV and a pre-trained YOLOv3-tiny model, covering still images, video, and real-time detection.</p>
+        <ul class="tags"><li>YOLOv3-tiny</li><li>OpenCV</li><li>Real-time detection</li></ul>
+      </article>
+    </div>
+
+    <h3 class="sub">Experience</h3>
+    <article class="exp">
+      <h4>Consulting for Walmart Blue Labs</h4>
+      <p class="when">Walmart Canada, 2023</p>
+      <ul>
+        <li>Led a four-person team through a month-long consulting sprint, developing recommendations for how Walmart could reinvent the retail experience for 2030 consumers.</li>
+        <li>Delegated tasks based on individual strengths, tracked deadlines, and facilitated collaboration to keep the team on schedule.</li>
+        <li>Unified divergent brainstorming ideas into a single strategic direction, accelerating progress and earning the opportunity to pitch directly to Walmart Canada’s CEO.</li>
+      </ul>
+    </article>
+    <article class="exp">
+      <h4>Innovator at The Knowledge Society</h4>
+      <p class="when">The Knowledge Society, 2021–2022</p>
+      <ul>
+        <li>Completed a 10-month global innovation accelerator, learning and applying emerging technologies including AI and machine learning through weekly sessions and project work.</li>
+        <li>Built Regeneration, which uses reinforcement learning-based simulations to address the carbon sequestration problem, and presented it to a panel of experts from leading technology companies.</li>
+        <li>Presented a project that identifies unique catalysts for ammonia fertilizer using quantum machine learning, and used the program’s feedback to shape our viewpoint on the viability of moonshot technologies.</li>
+      </ul>
+    </article>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul class="skills">
+      <li>Python</li><li>PyTorch</li><li>TensorFlow</li><li>Keras</li><li>NumPy</li><li>Pandas</li><li>Matplotlib</li><li>R</li><li>Flask</li><li>Django</li><li>JavaScript</li><li>HTML</li><li>CSS</li><li>Git</li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>The best way to reach me is by email or LinkedIn.</p>
+    <ul class="links">
+      <li><a class="btn btn-primary" href="mailto:parikhdev21@gmail.com">parikhdev21@gmail.com</a></li>
+      <li><a class="btn" href="https://www.linkedin.com/in/dev-parikh-283b34209/">LinkedIn</a></li>
+      <li><a class="btn" href="https://github.com/devparikh">GitHub</a></li>
+    </ul>
+  </section>
+
+  <footer>© 2026 Dev Parikh</footer>
+</div>
+
+<script src="script.js" defer></script>
+</body>
+</html>
